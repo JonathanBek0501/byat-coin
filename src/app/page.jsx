@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import RoadMap from "@/components/RoadMap";
 import Image from "next/image";
 import Link from 'next/link'
 
@@ -79,15 +79,6 @@ export default function Home() {
                     </div>
                   </div>
                 ))}
-
-                <div className="absolute -left-10 sm:-left-14 pointer-events-none">
-                  <Image
-                    src="/buy.gif"
-                    width={80}
-                    height={80}
-                    alt="buy"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -147,6 +138,16 @@ export default function Home() {
               Enter amount & swap
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="px-8 sm:px-12 MaxW1400:px-24 py-20">
+        <div className="space-y-32 max-w-base mx-auto">
+          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
+            Roundmap
+          </h2>
+
+          <RoadMap />
         </div>
       </section>
     </main>

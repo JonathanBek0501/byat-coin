@@ -28,7 +28,7 @@ const navigations = [
 const Header = () => {
   return (
     <header>
-      <div className='md:fixed top-0 left-0 w-full bg-primary/50 backdrop-blur-lg px-7 md:px-12 py-8 md:py-3'>
+      <div className='md:fixed top-0 left-0 w-full bg-primary/50 backdrop-blur-lg px-7 md:px-12 py-8 md:py-3 z-10'>
         <div className='max-w-base mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-16'>
           <div className='flex items-center gap-4'>
             <Image

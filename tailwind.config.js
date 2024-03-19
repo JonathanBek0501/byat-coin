@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'MaxW1400': {'max': '1400px', 'min': '1024px'}
+      },
       colors: {
         primary: {
          DEFAULT: '#FF7427',
