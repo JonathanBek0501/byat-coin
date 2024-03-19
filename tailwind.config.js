@@ -24,6 +24,15 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        ping: {
+          '75%, 100%': { transform: 'scale(1.4)', opacity: '0' },
+        }
+      },
+      animation: {
+        'ping-slow': 'ping 2s linear infinite',
+        'spin-slow': 'spin 2s linear infinite',
+      },
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ const RoadMap = () => {
                 <div className="border-t border-primary-light py-6 xl:py-10">
                     <div className="-translate-y-1/2 translate-x-1/2 mx-auto w-fit flex flex-col items-center gap-4">
                         <Image
-                        className="animate-spin"
+                        className="animate-spin-slow"
                         src="/roadMap/road-map-1.svg"
                         width={170}
                         height={167}
@@ -27,7 +27,7 @@ const RoadMap = () => {
                 <div className="border-t border-primary-light py-6 xl:py-10">
                     <div className="-translate-y-1/2 translate-x-[80%] mx-auto w-fit flex flex-col items-center gap-4">
                         <Image
-                        className="animate-ping"
+                        className="animate-ping-slow"
                         src="/roadMap/road-map-2.svg"
                         width={130}
                         height={136}
@@ -87,7 +87,7 @@ const RoadMap = () => {
                 <div className="-mt-px border-t border-primary-light py-6 xl:py-10">
                     <div className="-translate-y-1/2 -translate-x-[80%] mx-auto w-fit flex flex-col items-center gap-4">
                         <Image
-                        className="animate-spin"
+                        className="animate-spin-slow"
                         src="/roadMap/road-map-5.svg"
                         width={151}
                         height={122}
@@ -127,7 +127,7 @@ const RoadMap = () => {
                 <div className="border-primary-light py-6 xl:py-10">
                     <div className="-translate-y-1/2 translate-x-1/2 mx-auto w-fit flex flex-col items-center gap-4">
                         <Image
-                        className="animate-spin"
+                        className="animate-spin-slow"
                         src="/roadMap/road-map-7.svg"
                         width={131}
                         height={122}
@@ -167,7 +167,7 @@ const RoadMap = () => {
                 <div className="border-t border-primary-light rounded-r-full -mt-px py-6 xl:py-10">
                     <div className="translate-x-[70%] xl:translate-x-[80%] mx-auto w-fit flex flex-col items-center gap-4">
                         <Image
-                        className="animate-ping"
+                        className="animate-pulse"
                         src="/roadMap/road-map-9.svg"
                         width={113}
                         height={118}
@@ -189,7 +189,7 @@ const RoadMap = () => {
                 <div className="border-t border-primary-light">
                     <div className="-translate-y-1/2 ml-10 w-fit flex flex-col items-center gap-4">
                         <Image
-                        className="animate-spin"
+                        className="animate-spin-slow"
                         src="/roadMap/road-map-1.svg"
                         width={170}
                         height={167}
