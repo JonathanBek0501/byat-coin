@@ -185,7 +185,7 @@ export default function Home() {
 
           <div className="flex items-center gap-5 flex-wrap justify-center">
             {logos.map((logo,idx)=> (
-              <Link href={logo.link} target="_blank" className="block bg-primary-light rounded-lg p-3">
+              <Link key={idx} href={logo.link} target="_blank" className="block bg-primary-light rounded-lg p-3">
                 <Image
                   src={`/seenOn/${logo.img}`}
                   width={270}
@@ -335,8 +335,8 @@ export default function Home() {
                   />
                 </div>
 
-                <svg viewBox="0 0 100 100" width="100%" height="100%" class="overflow-visible h-[300px] max-sm:h-[52vw]">
-                  <path d="M 87.5 50 A 37.5 37.5 0 1 1 80.33813728906053 27.95805303903225" fill="none" stroke-width="25" stroke="#ffc252"><title>Solana NFT Communities</title></path><path d="M 80.33813728906053 27.95805303903225 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" stroke-width="25" stroke="#ff9431"><title>DEX Liquidity &amp; Rewards</title></path><text fill="white" fontSize={'14px'} dominant-baseline="central" x="50" y="50" dx="-52.30810839623345" dy="16.995934690622114" text-anchor="end">90%</text><text fill="white" fontSize={'14px'} dominant-baseline="central" x="50" y="50" dx="52.30810839623345" dy="-16.995934690622125" text-anchor="start">10%</text>
+                <svg viewBox="0 0 100 100" width="100%" height="100%" className="overflow-visible h-[300px] max-sm:h-[52vw]">
+                  <path d="M 87.5 50 A 37.5 37.5 0 1 1 80.33813728906053 27.95805303903225" fill="none" strokeWidth="25" stroke="#ffc252"><title>Solana NFT Communities</title></path><path d="M 80.33813728906053 27.95805303903225 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" strokeWidth="25" stroke="#ff9431"><title>DEX Liquidity &amp; Rewards</title></path><text fill="white" fontSize={'14px'} dominantBaseline="central" x="50" y="50" dx="-52.30810839623345" dy="16.995934690622114" textAnchor="end">90%</text><text fill="white" fontSize={'14px'} dominantBaseline="central" x="50" y="50" dx="52.30810839623345" dy="-16.995934690622125" textAnchor="start">10%</text>
                 </svg>
               </div>
 
