@@ -211,13 +211,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-8 sm:px-12 MaxW1400:px-24 py-20">
-        <div className="space-y-32 max-w-base mx-auto">
-          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
-            Roadmap
-          </h2>
+      <section className="overflow-hidden">
+        <div className="px-8 sm:px-12 MaxW1400:px-24 py-20">
+          <div className="space-y-32 max-w-base mx-auto">
+            <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
+              Roadmap
+            </h2>
 
-          <RoadMap />
+            <RoadMap />
+          </div>
         </div>
       </section>
 

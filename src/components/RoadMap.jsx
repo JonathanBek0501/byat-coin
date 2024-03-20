@@ -287,7 +287,7 @@ const RoadMap = () => {
                 </div>
                 
                 <div className="-mt-px border-primary-lighter border-y border-r rounded-r-full py-5">
-                    <div className="ml-auto translate-x-8 -translate-y-[20%] w-fit flex flex-col items-center gap-4 overflow-hidden">
+                    <div className="ml-auto translate-x-8 -translate-y-[20%] w-fit flex flex-col items-center gap-4">
                         <Image
                         className="animate-spin-slow"
                         src="/roadMap/road-map-5.svg"
