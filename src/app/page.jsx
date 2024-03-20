@@ -309,36 +309,37 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2 items-center gap-10 lg:gap-0 pt-10">
             <div className="space-y-5 text-center">
-              <h3 className="text-3xl uppercase text-white font-bold">
+              <h3 className="text-2xl sm:text-3xl uppercase text-white font-bold">
                 current total supply:
               </h3>
               <div className="flex flex-col gap-1 text-primary-lighter">
-                <span className="text-7xl font-bold">
+                <span className="text-5xl sm:text-7xl font-bold">
                   51T $BYAT
                 </span>
-                <span className="text-4xl font-bold">
+                <span className="text-3xl sm:text-4xl font-bold">
                   (50 980 987 923 127)
                 </span>
               </div>
-              <h3 className="text-3xl uppercase text-white font-bold">
+              <h3 className="text-2xl sm:text-3xl uppercase text-white font-bold">
                 supply burned: 49% 🔥
               </h3>
             </div>
 
             <div className="flex flex-col items-center gap-5">
-              <div className="relative">
+              <div className="relative w-[75%] sm:w-full">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Image
-                    className=""
-                    src="/logo.png"
-                    width={160}
-                    height={160}
-                    alt="Logo"
-                  />
+                  <div className="relative size-[122px] sm:size-40">
+                    <Image
+                      className="w-full h-full object-cover"
+                      src="/logo.png"
+                      fill={true}
+                      alt="Logo"
+                    />
+                  </div>
                 </div>
 
-                <svg viewBox="0 0 100 100" width="100%" height="100%" className="overflow-visible h-[300px] max-sm:h-[52vw]">
-                  <path d="M 87.5 50 A 37.5 37.5 0 1 1 80.33813728906053 27.95805303903225" fill="none" strokeWidth="25" stroke="#ffc252"><title>Solana NFT Communities</title></path><path d="M 80.33813728906053 27.95805303903225 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" strokeWidth="25" stroke="#ff9431"><title>DEX Liquidity &amp; Rewards</title></path><text fill="white" fontSize={'14px'} dominantBaseline="central" x="50" y="50" dx="-52.30810839623345" dy="16.995934690622114" textAnchor="end">90%</text><text fill="white" fontSize={'14px'} dominantBaseline="central" x="50" y="50" dx="52.30810839623345" dy="-16.995934690622125" textAnchor="start">10%</text>
+                <svg viewBox="0 0 100 100" width="100%" height="100%" className="w-full object-cover overflow-visible h-[300px] max-sm:h-[52vw]">
+                  <path d="M 87.5 50 A 37.5 37.5 0 1 1 80.33813728906053 27.95805303903225" fill="none" strokeWidth="25" stroke="#ffc252"><title>Solana NFT Communities</title></path><path d="M 80.33813728906053 27.95805303903225 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" strokeWidth="25" stroke="#ff9431"><title>DEX Liquidity &amp; Rewards</title></path><text fill="white" className="text-xs sm:text-sm" dominantBaseline="central" x="50" y="50" dx="-52.30810839623345" dy="16.995934690622114" textAnchor="end">90%</text><text fill="white" className="text-xs sm:text-sm" dominantBaseline="central" x="50" y="50" dx="52.30810839623345" dy="-16.995934690622125" textAnchor="start">10%</text>
                 </svg>
               </div>
 
