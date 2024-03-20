@@ -328,7 +328,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-5">
               <div className="relative w-[75%] sm:w-full">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative size-[122px] sm:size-40">
+                  <div className="relative size-32 sm:size-40">
                     <Image
                       className="w-full h-full object-cover"
                       src="/logo.png"
