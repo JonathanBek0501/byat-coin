@@ -13,16 +13,12 @@ module.exports = {
       colors: {
         primary: {
          DEFAULT: '#FF7427',
-         light: '#FFC762'  
+         light: '#FF9431',  
+         lighter: '#FFC762',  
         }
       },
       maxWidth: {
         base: '1200px'
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
         ping: {

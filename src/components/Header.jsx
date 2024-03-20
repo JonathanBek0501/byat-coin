@@ -38,7 +38,7 @@ const Header = () => {
               alt="Logo of the project"
               className='w-12 md:w-full h-12 md:h-full'
             />
-            <span className='md:hidden text-2xl uppercase text-primary-light font-black'>
+            <span className='md:hidden text-2xl uppercase text-primary-lighter font-black'>
               $BYAT
             </span>
           </div>
@@ -49,7 +49,7 @@ const Header = () => {
                 {item.title}
               </Link>
             ))}
-            <Link href="" className='bg-primary-light text-xl font-medium text-primary uppercase rounded-full hover:scale-105 transition-all ease-in-out px-5 py-1'>
+            <Link href="" className='bg-primary-lighter text-xl font-medium text-primary uppercase rounded-full hover:scale-105 transition-all ease-in-out px-5 py-1'>
               Points
             </Link>
           </div>
