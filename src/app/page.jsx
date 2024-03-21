@@ -121,7 +121,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary-lighter px-8 sm:px-12 py-20">
+      <section id="howToBuy" className="bg-primary-lighter px-8 sm:px-12 py-20">
         <div className="max-w-base mx-auto space-y-10">
           <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-primary text-center">
             How to buy $byat
@@ -156,7 +156,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-8 sm:px-12 MaxW1400:px-24 py-20">
+      <section id="seenOn" className="px-8 sm:px-12 MaxW1400:px-24 py-20">
         <div className="space-y-20 max-w-base mx-auto">
           <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
             Seen on
@@ -177,7 +177,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary-lighter px-8 sm:px-12 py-20">
+      <section id="partners" className="bg-primary-lighter px-8 sm:px-12 py-20">
         <div className="max-w-base mx-auto space-y-20">
           <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
             our partners
@@ -190,7 +190,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="overflow-hidden">
+      <section id="roadMap" className="overflow-hidden">
         <div className="px-8 sm:px-12 MaxW1400:px-24 py-20">
           <div className="space-y-32 max-w-base mx-auto">
             <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
@@ -202,7 +202,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary-lighter px-4 sm:px-12 py-20">
+      <section id="flipCoin" className="bg-primary-lighter px-4 sm:px-12 py-20">
         <div className="max-w-base mx-auto space-y-10">
           <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
             flip the bonk goal (live)
@@ -276,7 +276,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary px-8 sm:px-12 py-20">
+      <section id="tokenomics" className="bg-primary px-8 sm:px-12 py-20">
         <div className="max-w-base mx-auto space-y-10">
           <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-primary-lighter text-center">
             tokenomics

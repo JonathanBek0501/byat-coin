@@ -50,7 +50,7 @@ const RoadMap = () => {
                         className="animate-pulse"
                         src="/roadMap/road-map-3.svg"
                         width={145}
-                        height={139}
+                        height={138.28}
                         alt="star"
                         />
                         <div className="uppercase text-center font-medium">
@@ -252,7 +252,7 @@ const RoadMap = () => {
                         className="animate-pulse"
                         src="/roadMap/road-map-3.svg"
                         width={110}
-                        height={96}
+                        height={104}
                         alt="sun"
                         />
                         <div className="uppercase text-center font-medium">

@@ -34,8 +34,22 @@
   font-display: swap;
 }
 
+html {
+  @apply scroll-smooth
+}
+
 body {
   @apply bg-primary font-monteStella
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 199 98 / var(--tw-bg-opacity));
 }
 
 @layer utilities {
