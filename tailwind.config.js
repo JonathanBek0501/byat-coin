@@ -29,6 +29,9 @@ module.exports = {
         'ping-slow': 'ping 2s linear infinite',
         'spin-slow': 'spin 2s linear infinite',
       },
+      fontFamily: {
+        monteStella: ['Monte Stella', 'san-serif']
+      }
     },
   },
   plugins: [],

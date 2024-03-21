@@ -45,12 +45,12 @@ const Header = () => {
 
           <div className='flex items-center gap-x-6 gap-y-1 flex-wrap justify-center md:justify-end'>
             {navigations.map((item,idx)=> (
-              <Link key={idx} href={item.link} className='text-xl font-medium text-white uppercase hover:underline'>
+              <Link key={idx} href={item.link} className='text-3xl font-medium text-white uppercase hover:underline'>
                 {item.title}
               </Link>
             ))}
-            <Link href="" className='bg-primary-lighter text-xl font-medium text-primary uppercase rounded-full hover:scale-105 transition-all ease-in-out px-5 py-1'>
-              Points
+            <Link href="https://jup.ag/swap/SOL-BYAT_BYATmZ7ry2pewxW3213sczJYB7ZJzPr921uvcRcJYYZQ" target='_blank' className='bg-primary-lighter text-3xl font-medium text-primary uppercase rounded-full hover:scale-105 transition-all ease-in-out px-5 py-1'>
+              Buy Now
             </Link>
           </div>
         </div>

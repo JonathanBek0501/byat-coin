@@ -165,7 +165,7 @@ const RoadMap = () => {
                 </div>
                 
                 <div className="border-t border-primary-lighter rounded-r-full -mt-px py-6 xl:py-10">
-                    <div className="translate-x-[70%] xl:translate-x-[80%] mx-auto w-fit flex flex-col items-center gap-4">
+                    <div className="translate-x-[70%] xl:translate-x-full mx-auto w-fit flex flex-col items-center gap-4">
                         <Image
                         className="animate-pulse"
                         src="/roadMap/road-map-9.svg"
