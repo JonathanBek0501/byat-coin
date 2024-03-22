@@ -2,44 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Monte Stella';
-  src: url('../fonts/MonteStella_Trial_Rg.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Monte Stella';
-  src: url('../fonts/MonteStella_Trial_Bd.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Monte Stella';
-  src: url('../fonts/MonteStella_Trial_Md.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Monte Stella';
-  src: url('../fonts/MonteStella_Trial_He.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
   @apply scroll-smooth
 }
 
 body {
-  @apply bg-primary font-monteStella
+  @apply bg-primary
 }
 
 ::-webkit-scrollbar {

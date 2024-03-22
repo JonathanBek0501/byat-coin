@@ -63,13 +63,13 @@ const Header = () => {
             {navigations.map((item, idx) => (
               <div
                 key={idx}
-                className='text-3xl font-medium text-white uppercase hover:underline cursor-pointer'
+                className='text-xl font-medium text-white uppercase hover:underline cursor-pointer'
                 onClick={() => scrollToSection(item.link)}
               >
                 {item.title}
               </div>
             ))}
-            <Link href="https://jup.ag/swap/SOL-BYAT_BYATmZ7ry2pewxW3213sczJYB7ZJzPr921uvcRcJYYZQ" target='_blank' className='bg-primary-lighter text-3xl font-medium text-primary uppercase rounded-full hover:scale-105 transition-all ease-in-out px-5 py-1'>
+            <Link href="https://jup.ag/swap/SOL-BYAT_BYATmZ7ry2pewxW3213sczJYB7ZJzPr921uvcRcJYYZQ" target='_blank' className='bg-primary-lighter text-xl font-medium text-primary uppercase rounded-full hover:scale-105 transition-all ease-in-out px-5 py-1'>
               Buy Now
             </Link>
           </div>

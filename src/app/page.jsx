@@ -87,7 +87,7 @@ export default function Home() {
               $BYAT
             </h1>
             
-            <div className="text-4xl lg:text-6xl font-bold text-white space-y-5 uppercase">
+            <div className="text-4xl lg:text-5xl font-bold text-white space-y-5 uppercase">
               <p>
                 $BYAT Delving Deep Into Byat Meme Coin.
               </p>
@@ -106,7 +106,7 @@ export default function Home() {
                         width={28}
                         height={28}
                         alt="Coingecko Icon"
-                        className="size-6 sm:size-7"
+                        className={`size-6 sm:size-7 ${item.icon === 'telegram' && 'scale-150'}`}
                       />
                     </Link>
 
@@ -127,17 +127,17 @@ export default function Home() {
             How to buy $byat
           </h2>
 
-          <ul className="w-fit mx-auto space-y-3 bg-primary rounded-lg list-decimal list-inside text-white text-lg sm:text-3xl font-bold uppercase p-8 sm:p-12">
+          <ul className="w-fit mx-auto space-y-3 bg-primary rounded-lg list-decimal list-inside text-white text-sm sm:text-2xl md:text-3xl font-bold uppercase px-6 py-8 sm:p-12">
             <li>
               <div className="inline-flex items-center gap-1">
                 Go to buy on jupiter
-                <div className="inline-block w-fit rounded-full bg-primary-lighter transition-all ease-in-out group-hover:scale-105 p-3">
+                <div className="inline-block size-8 sm:size-[52px] rounded-full bg-primary-lighter transition-all ease-in-out group-hover:scale-105 p-2 sm:p-3">
                   <Image
                     src={`/connections/jupiter.svg`}
                     width={28}
                     height={28}
                     alt="Coingecko Icon"
-                    className="size-6 sm:size-7"
+                    className="w-full h-full"
                   />
                 </div>
                 above
@@ -209,7 +209,7 @@ export default function Home() {
           </h2>
           
           <div className="space-y-4 max-w-4xl mx-auto">
-            <table className="text-sm sm:text-xl uppercase text-white w-full text-center rounded-lg overflow-hidden sm:mx-0">
+            <table className="text-sm sm:text-xl uppercase text-white w-full text-center rounded-lg overflow-hidden -mx-2 sm:mx-0">
               <thead>
                 <tr>
                   <th className="w-[5%] border-4 border-primary p-2"></th>
