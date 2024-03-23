@@ -60,9 +60,28 @@ const logos = [
   },
 ]
 
+const nfts = [
+  'emo1.png',
+  'emo.gif',
+  'emo2.png',
+  'emo1.png',
+  'emo.gif',
+  'emo2.png',
+  'emo1.png',
+  'emo.gif',
+  'emo2.png',
+  'emo1.png',
+  'emo.gif',
+  'emo2.png',
+  'emo1.png',
+  'emo.gif',
+  'emo2.png',
+]
+
 export default function Home() {
   return (
     <main>
+      {/* Hero section */}
       <section className="md:pt-40 px-8 sm:px-12 pb-20">
         <div className="max-w-base mx-auto grid md:grid-cols-2 items-center">
           <div className="grid grid-cols-2 justify-items-center -space-y-12 -space-x-12">
@@ -121,6 +140,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How to Buy */}
       <section id="howToBuy" className="bg-primary-lighter px-8 sm:px-12 py-20">
         <div className="max-w-base mx-auto space-y-10">
           <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-primary text-center">
@@ -153,43 +173,40 @@ export default function Home() {
               Enter amount & swap
             </li>
           </ul>
-        </div>
-      </section>
 
-      <section id="seenOn" className="px-8 sm:px-12 MaxW1400:px-24 py-20">
-        <div className="space-y-20 max-w-base mx-auto">
-          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
-            Seen on
-          </h2>
+          {/* Fronklets */}
+          <div className="pt-20">
+            <Link href="#" className="group block transition-all ease-in-out hover:scale-[1.01]">
+              <div className="bg-primary rounded-3xl overflow-hidden">
+                <div className="image-container">
+                {nfts.map((item, idx) => (
+                  <Image
+                    key={idx}
+                    className="nft-image"
+                    src={`/emo/${item}`}
+                    width={160}
+                    height={160}
+                    alt="nft"
+                  />
+                ))}
+                </div>
 
-          <div className="flex items-center gap-5 flex-wrap justify-center">
-            {logos.map((logo,idx)=> (
-              <Link key={idx} href={logo.link} target="_blank" className="block bg-primary-light rounded-lg p-3">
-                <Image
-                  src={`/seenOn/${logo.img}`}
-                  width={270}
-                  height={88}
-                  alt="yahoo"
-                />
-              </Link>
-            ))}
+                <div className="drop-shadow-top text-center space-y-6 p-7 relative z-10">
+                  <h3 className="uppercase text-4xl sm:text-5xl font-black text-primary-lighter group-hover:text-white">
+                    byatlets 🐺
+                  </h3>
+
+                  <p className="max-w-4xl mx-auto text-lg text-white font-semibold">
+                    Fronklets is an official $FRONK NFT collection distributed exclusively to the top $FRONK community members and Saga Genesis holders. Collecting Fronklets also earns you points.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
-      <section id="partners" className="bg-primary-lighter px-8 sm:px-12 py-20">
-        <div className="max-w-base mx-auto space-y-20">
-          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
-            our partners
-          </h2>
-
-          <div className="flex items-center justify-center gap-10 sm:gap-20 flex-wrap">
-            <img src="/gotBit.webp" alt="GotBit logo" className="max-w-xs" />
-            <img src="/KenzoLabs.webp" alt="KenzoLabs" className="max-w-xs" />
-          </div>
-        </div>
-      </section>
-
+      {/* Roadmap */}
       <section id="roadMap" className="overflow-hidden">
         <div className="px-8 sm:px-12 MaxW1400:px-24 py-20">
           <div className="space-y-32 max-w-base mx-auto">
@@ -202,6 +219,73 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Tokenomics */}
+      <section id="tokenomics" className="border-t border-t-primary-lighter px-8 sm:px-12 py-20">
+        <div className="max-w-base mx-auto space-y-10">
+          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-primary-lighter text-center">
+            tokenomics
+          </h2>
+
+          <p className="max-w-4xl mx-auto text-center text-xl font-medium text-white">
+            In the vibrant world of Solana’s meme coins, a new star is rising, promising not just a wave but a tsunami of opportunities for the keen investor. Byat ($BYAT), affectionately known as “$BONK Goes Gyat,” is setting the crypto world alight with its current presale. As the saying goes, “The early dog gets the Byat,” and this couldn’t be truer for those ready to leap into its presale phases, each offering a golden ticket to be part of the next big success story in the $SOL  ecosystem.
+          </p>
+
+          <div className="grid lg:grid-cols-2 items-center gap-10 lg:gap-0 pt-10">
+            <div className="space-y-5 text-center">
+              <h3 className="text-2xl sm:text-3xl uppercase text-white font-bold">
+                current total supply:
+              </h3>
+              <div className="flex flex-col gap-1 text-primary-lighter">
+                <span className="text-5xl sm:text-7xl font-bold">
+                  51T $BYAT
+                </span>
+                <span className="text-3xl sm:text-4xl font-bold">
+                  (50 980 987 923 127)
+                </span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl uppercase text-white font-bold">
+                supply burned: 49% 🔥
+              </h3>
+            </div>
+
+            <div className="flex flex-col items-center gap-5">
+              <div className="relative w-[75%] sm:w-full">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative size-32 sm:size-40">
+                    <Image
+                      className="w-full h-full object-cover"
+                      src="/logo.png"
+                      fill={true}
+                      alt="Logo"
+                    />
+                  </div>
+                </div>
+
+                <svg viewBox="0 0 100 100" width="100%" height="100%" className="w-full object-cover overflow-visible h-[300px] max-sm:h-[52vw]">
+                  <path d="M 87.5 50 A 37.5 37.5 0 1 1 80.33813728906053 27.95805303903225" fill="none" strokeWidth="25" stroke="#ffc252"><title>Solana NFT Communities</title></path><path d="M 80.33813728906053 27.95805303903225 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" strokeWidth="25" stroke="#ff9431"><title>DEX Liquidity &amp; Rewards</title></path><text fill="white" className="text-xs sm:text-sm" dominantBaseline="central" x="50" y="50" dx="-52.30810839623345" dy="16.995934690622114" textAnchor="end">90%</text><text fill="white" className="text-xs sm:text-sm" dominantBaseline="central" x="50" y="50" dx="52.30810839623345" dy="-16.995934690622125" textAnchor="start">10%</text>
+                </svg>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-primary-lighter"></div>
+                  <span className="text-white font-medium text-lg">
+                    90% - Solana NFT Communities
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-primary-light"></div>
+                  <span className="text-white font-medium text-lg">
+                    10% - DEX Liquidity & Rewards
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Flip goal */}
       <section id="flipCoin" className="bg-primary-lighter px-4 sm:px-12 py-20">
         <div className="max-w-base mx-auto space-y-10">
           <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
@@ -276,67 +360,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="tokenomics" className="bg-primary px-8 sm:px-12 py-20">
-        <div className="max-w-base mx-auto space-y-10">
-          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-primary-lighter text-center">
-            tokenomics
+      {/* Seen On */}
+      <section id="seenOn" className="px-8 sm:px-12 MaxW1400:px-24 py-20">
+        <div className="space-y-20 max-w-base mx-auto">
+          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
+            Seen on
           </h2>
 
-          <p className="max-w-4xl mx-auto text-center text-xl font-medium text-white">
-            In the vibrant world of Solana’s meme coins, a new star is rising, promising not just a wave but a tsunami of opportunities for the keen investor. Byat ($BYAT), affectionately known as “$BONK Goes Gyat,” is setting the crypto world alight with its current presale. As the saying goes, “The early dog gets the Byat,” and this couldn’t be truer for those ready to leap into its presale phases, each offering a golden ticket to be part of the next big success story in the $SOL  ecosystem.
-          </p>
+          <div className="flex items-center gap-5 flex-wrap justify-center">
+            {logos.map((logo,idx)=> (
+              <Link key={idx} href={logo.link} target="_blank" className="block bg-primary-light rounded-lg p-3">
+                <Image
+                  src={`/seenOn/${logo.img}`}
+                  width={270}
+                  height={88}
+                  alt="yahoo"
+                />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="grid lg:grid-cols-2 items-center gap-10 lg:gap-0 pt-10">
-            <div className="space-y-5 text-center">
-              <h3 className="text-2xl sm:text-3xl uppercase text-white font-bold">
-                current total supply:
-              </h3>
-              <div className="flex flex-col gap-1 text-primary-lighter">
-                <span className="text-5xl sm:text-7xl font-bold">
-                  51T $BYAT
-                </span>
-                <span className="text-3xl sm:text-4xl font-bold">
-                  (50 980 987 923 127)
-                </span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl uppercase text-white font-bold">
-                supply burned: 49% 🔥
-              </h3>
-            </div>
+      {/* Our Partners */}
+      <section id="partners" className="bg-primary-lighter px-8 sm:px-12 py-20">
+        <div className="max-w-base mx-auto space-y-20">
+          <h2 className="uppercase text-4xl sm:text-5xl lg:text-6xl font-black text-white text-center">
+            our partners
+          </h2>
 
-            <div className="flex flex-col items-center gap-5">
-              <div className="relative w-[75%] sm:w-full">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative size-32 sm:size-40">
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/logo.png"
-                      fill={true}
-                      alt="Logo"
-                    />
-                  </div>
-                </div>
-
-                <svg viewBox="0 0 100 100" width="100%" height="100%" className="w-full object-cover overflow-visible h-[300px] max-sm:h-[52vw]">
-                  <path d="M 87.5 50 A 37.5 37.5 0 1 1 80.33813728906053 27.95805303903225" fill="none" strokeWidth="25" stroke="#ffc252"><title>Solana NFT Communities</title></path><path d="M 80.33813728906053 27.95805303903225 A 37.5 37.5 0 0 1 87.5 49.99999999999999" fill="none" strokeWidth="25" stroke="#ff9431"><title>DEX Liquidity &amp; Rewards</title></path><text fill="white" className="text-xs sm:text-sm" dominantBaseline="central" x="50" y="50" dx="-52.30810839623345" dy="16.995934690622114" textAnchor="end">90%</text><text fill="white" className="text-xs sm:text-sm" dominantBaseline="central" x="50" y="50" dx="52.30810839623345" dy="-16.995934690622125" textAnchor="start">10%</text>
-                </svg>
-              </div>
-
-              <div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-primary-lighter"></div>
-                  <span className="text-white font-medium text-lg">
-                    90% - Solana NFT Communities
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-primary-light"></div>
-                  <span className="text-white font-medium text-lg">
-                    10% - DEX Liquidity & Rewards
-                  </span>
-                </div>
-              </div>
-            </div>
+          <div className="flex items-center justify-center gap-10 sm:gap-20 flex-wrap">
+            <img src="/gotBit.webp" alt="GotBit logo" className="max-w-xs" />
+            <img src="/KenzoLabs.webp" alt="KenzoLabs" className="max-w-xs" />
           </div>
         </div>
       </section>

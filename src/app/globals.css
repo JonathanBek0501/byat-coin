@@ -10,6 +10,29 @@ body {
   @apply bg-primary
 }
 
+.image-container {
+  display: flex;
+  animation: scroll-left 10s linear infinite; /* Adjust animation duration as needed */
+  animation-direction: alternate; /* Reverse the animation direction on each cycle */
+}
+
+.nft-image {
+  flex: 0 0 auto; /* Prevent images from growing or shrinking */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-25% - ((160px * 15) - 100vw))); /* Adjust based on number and width of images */
+  }
+}
+
+.drop-shadow-top {
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
 ::-webkit-scrollbar {
   width: 0.625rem;
 }
